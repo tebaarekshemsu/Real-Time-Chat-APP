@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f7fa;
+}
+
+#chat-container {
+    width: 90%;
+    max-width: 700px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: none;
+}
+
+#message-container {
+    height: 450px;
+    overflow-y: auto;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#send-container {
+    display: flex;
+    padding: 15px;
+    background: #f0f0f0;
+}
+
+#message-input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+#message-input:focus {
+    border: 1px solid #007bff;
+}
+
+button {
+    padding: 12px 20px;
+    background: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.message {
+    padding: 15px;
+    margin-bottom: 15px;
+    max-width: 60%;
+    word-wrap: break-word;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.your-message {
+    text-align: right;
+    margin-left: auto;
+    background-color: #d1e7dd;
+}
+
+.other-message {
+    text-align: left;
+    margin-right: auto;
+    background-color: #f8d7da;
+}
+
+.names {
+    font-weight: bold;
+    color: #333;
+}
+
+.user {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.online {
+    background-color: green;
+}
+
+.offline {
+    background-color: silver;
+}
+
+#login-container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#login-container input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+#login-container input:focus {
+    border: 1px solid #007bff;
+}
+
+#login-container button {
+    padding: 12px 20px;
+    background: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#login-container button:hover {
+    background: #0056b3;
+}
+
+#users-container {
+    padding: 20px;
+}
